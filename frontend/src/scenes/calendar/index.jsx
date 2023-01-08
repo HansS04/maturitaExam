@@ -6,10 +6,10 @@ import interactionPlugin from "@fullcalendar/interaction";
 import listPlugin from "@fullcalendar/list";
 import UserList from "../../queries/testTodo";
 import TotalTimePerMonth from "../../queries/totalHours";
-import Hours from "../../queries/allProfilesHours"
+import Hours from "../../queries/allProfilesHours";
 import AllProfiles from "../../queries/totalProfiles";
 import TotalSoftware from "../../queries/totalSoftware";
-import TotalHardware from "../../queries/totalHardware";
+//import { TotalHardware } from "../../queries/totalHardware";
 
 import {
   Box,
@@ -21,7 +21,6 @@ import {
 } from "@mui/material";
 import Header from "../../components/Header";
 import { tokens } from "../../theme";
-
 
 const Calendar = () => {
   const theme = useTheme();
@@ -60,12 +59,6 @@ const Calendar = () => {
         title="Calendar"
         subtitle="You can set appointments... bla bla bla"
       />
-      <UserList></UserList>
-      <Hours></Hours>
-      <AllProfiles></AllProfiles>
-      <TotalTimePerMonth></TotalTimePerMonth>
-      <TotalHardware></TotalHardware>
-      <TotalSoftware></TotalSoftware>
       <Box display="flex" justifyContent="space-between">
         {/* CALENDAR SIDEBAR */}
         <Box
