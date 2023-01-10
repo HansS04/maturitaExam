@@ -1,5 +1,5 @@
 import { tokens } from "../theme";
-import { TotalHardware as hardwareCount } from "../queries/totalHardware";
+//import { TotalHardware as hardwareCount } from "../queries/totalHardware";
 
 export const mockDataTeam = [
   {
@@ -359,7 +359,7 @@ export const mockPieData = [
   {
     id: "Hardware",
     label: "Hardware",
-    value: hardwareCount,
+    value: 5,
     color: "hsl(162, 70%, 50%)",
   },
 ];
